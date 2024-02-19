@@ -6,9 +6,6 @@ let singlePrice = 550;
 let grandTotalPrice = 0;
 let abc = "eco";
 
-// ********************
-// const selectedSeats = [];
-
 // Add event listeners to all buttons with class 'seat'
 const seatButtons = document.querySelectorAll(".seat");
 
@@ -50,7 +47,6 @@ function rmSeat(seatId) {
     }
   }
 }
-// ****************************************
 
 // Function to toggle the selected state of a seat
 function toggleSeat(seatId) {

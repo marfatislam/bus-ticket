@@ -36,6 +36,86 @@
   </head>
   <body class="font-raleway container mx-auto px-32 bg-[#F7F8F8] text-black">
     <section>
+      <div class="navbar mb-4">
+        <div class="navbar-start">
+          <a class="btn btn-ghost font-bold text-xl">Bus-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div
+            class="flex gap-1 px-4 py-2 rounded-xl cursor-pointer border border-green-500 bg-green-200"
+          >
+            <a class="font-bold">Bus</a>
+            <img src="./images/bus-icon.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="items-center text-white mb-5">
+        <div
+          class="flex flex-col justify-center gap-3 items-center w-full h-[550px] rounded-3xl bg-[url('./images/banner.png')]"
+        >
+          <h2 class="font-extrabold text-5xl">End-to-End Travel with</h2>
+          <h2 class="font-extrabold text-5xl text-[#1DD100]">P Paribahan</h2>
+          <p class="w-1/2">
+            Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features allow for a streamlined .
+          </p>
+          <div class="card-actions justify-center">
+            <button class="btn bg-[#1DD100] border-none text-black font-bold">
+              Buy Tickets
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="flex justify-center items-center gap-8">
+        <div
+          class="flex justify-center items-center bg-amber-400 gap-4 rounded-2xl px-16"
+        >
+          <div>
+            <h1 class="font-extrabold text-3xl">15% OFF</h1>
+            <h2 class="font-semibold">On your next purchase</h2>
+            <p>use by January 2024</p>
+          </div>
+          <div>
+            <img src="./images/cupon-devider.png" alt="" />
+          </div>
+          <div>
+            <h1 class="font-extrabold text-3xl">NEW15</h1>
+            <p>Coupon Code</p>
+          </div>
+        </div>
+        <div>
+          <div
+            class="flex justify-center items-center bg-[#F78C9C] gap-5 rounded-2xl px-16"
+          >
+            <div>
+              <h1 class="font-extrabold text-3xl">15% OFF</h1>
+              <h2 class="font-semibold">On your next purchase</h2>
+              <p>use by January 2024</p>
+            </div>
+            <div>
+              <img src="./images/cupon-devider.png" alt="" />
+            </div>
+            <div>
+              <h1 class="font-extrabold text-3xl">NEW15</h1>
+              <p>Coupon Code</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
       <div class="text-center mb-12">
         <h1 class="font-bold">P.H Paribahan</h1>
         <p>
@@ -86,11 +166,11 @@
     <section>
       <div class="flex justify-between gap-20">
         <div class="w-1/2">
-          <div>
+          <div class="mb-4">
             <h3>Select Your Seat</h3>
           </div>
           <div>
-            <div class="flex justify-between">
+            <div class="flex justify-between mb-4">
               <div class="flex gap-2">
                 <img src="./images/seat-gray.png" alt="" />
                 <p>Available</p>
@@ -101,7 +181,11 @@
               </div>
             </div>
             <div class="flex justify-end">
-              <img src="./images/wheel.png" alt="" />
+              <img
+                class="bg-gray-300 p-2 rounded-xl"
+                src="./images/wheel.png"
+                alt=""
+              />
             </div>
             <div>
               <div class="flex justify-around py-5">
@@ -120,13 +204,17 @@
           </div>
         </div>
         <div class="w-1/2">
-          <div class="text-center">
+          <div class="text-center mb-4">
             <h3>Select Your Seat</h3>
           </div>
           <div>
             <div class="flex gap-10 pb-3">
-              <h4 class="font-bold">Seat</h4>
-              <span id="selectedSeats">0</span>
+              <div class="flex gap-1">
+                <h4 class="font-bold">Seat</h4>
+                <span class="bg-[#1DD100] rounded-md px-2" id="selectedSeats"
+                  >0</span
+                >
+              </div>
               <h4 class="font-bold">Class</h4>
               <h4 class="font-bold">Price</h4>
             </div>
